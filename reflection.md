@@ -5,16 +5,25 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+  The first time the game ran it looked normal. There was UI which let the user input a guess. And there was a message sent to give a hint to the player based on what their guess was.
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+  The first bug was that the hints weren't correct. They kept saying "go lower" even when that was not right.
+  The second bug is that the option to start a new game isn't working.
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  The AI tool that I used on this project was Claude Code
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  An example of an AI suggestion that was correct was that there was a mismatch between what the check_guess function returns and what the test asserts against. I asked Claude to correct the mismatch so they return and expect the same thing. I verified this was right by running the test and seeing that it passed.
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  One suggestion that didn't work was when I was trying to fix the bug with the hints being incorrect. Claude didn't necessarily make a mistake but it neglected to fix another error behind the why the hints weren't working. So I asked Claude to help fix the hints and it suggested one fix (to remove the logic that converted the secret into a string), but didn't fix the other bug which was with the wording of the hint. I had to prompt again to get Claude to fix the other bug. I verified the result by checking that the hints now worked for the game.
 
 ---
 
